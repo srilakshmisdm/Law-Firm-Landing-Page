@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N5Z9Q9VP');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Law Firm - Free Legal Consultation</title>
+
+<!-- Google Tag Manager -->
+<!-- Paste GTM Code Here -->
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f7fa;
+    color:#333;
+}
+.hero{
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+.hero p{
+    font-size:20px;
+}
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+.practice-areas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+.form-section{
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+    margin-top:40px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+button{
+    background:#d4af37;
+    color:#000;
+    border:none;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.call-btn{
+    display:inline-block;
+    background:#22c55e;
+    color:white;
+    padding:15px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:15px;
+}
+.footer{
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5Z9Q9VP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<section class="hero">
+    <h1>Speak With An Experienced Lawyer Today</h1>
+    <p>Get a Free Legal Consultation. Fast, Confidential & Professional.</p>
+
+    <a href="tel:+919876543210" class="call-btn">
+        Call Now: +91 98765 43210
+    </a>
+</section>
+
+<div class="container">
+
+    <h2>Practice Areas</h2>
+
+    <div class="practice-areas">
+        <div class="card">Family Law</div>
+        <div class="card">Divorce Cases</div>
+        <div class="card">Criminal Defense</div>
+        <div class="card">Property Disputes</div>
+        <div class="card">Corporate Law</div>
+        <div class="card">Civil Litigation</div>
+    </div>
+
+    <div class="form-section">
+        <h2>Get Your Free Consultation</h2>
+
+       
+<form id="leadForm">
+
+<input type="text" id="fullname" placeholder="Full Name" required>
+<input type="tel" id="phone" placeholder="Phone Number" required>
+<input type="email" id="email" placeholder="Email Address" required>
+<input type="text" id="issue" placeholder="Legal Issue">
+<textarea id="message" placeholder="Describe Your Case"></textarea>
+
+<button type="submit">Get Free Consultation</button>
+
+</form>
+
+<script>
+
+document.getElementById("leadForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+fetch("https://script.google.com/macros/s/AKfycbxJmUbhgwOpRBwB6Cqxq6GdJWzjAiuzi4heBnasGm9JGUDn68BWS_jqayMmSJoklN3D/exec", {
+
+method: "POST",
+
+body: JSON.stringify({
+
+fullname: document.getElementById("fullname").value,
+phone: document.getElementById("phone").value,
+email: document.getElementById("email").value,
+issue: document.getElementById("issue").value,
+message: document.getElementById("message").value
+
+})
+
+})
+.then(response => {
+
+window.location.href = "thank-you.html";
+
+});
+
+});
+
+</script>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 Your Law Firm | All Rights Reserved
+</div>
+
+</body>
+</html>
